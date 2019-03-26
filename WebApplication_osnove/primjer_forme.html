@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script language="javascript" type="text/javascript">
+        function Pozdrav()
+        {
+            alert('Pozdrav iz web preglednika pomoću JavaScript-a!');
+        }
+        function Pisi()
+        {
+            console.log("Miš je iznad mene!!! aaaaaa");
+        }
+    </script>
+</head>
+<body>
+    <form onmouseover="Pisi();">
+        Programiranje u:
+        <br />
+        <input type="checkbox" name="vbnet"/>VB Net <br />
+        <input type="checkbox" name="csharp"/>C# <br />
+        <input type="checkbox" name="php"/>PHP <br />
+        <input type="submit" value="potvrdi" />
+    </form>
+    <br />
+    <input type="button" value="Klikni me" onclick="Pozdrav();"/>
+</body>
+</html>
