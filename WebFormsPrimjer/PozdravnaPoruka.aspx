@@ -11,8 +11,8 @@
         <div>
             Ovo je pozdravna poruka <br />
             <asp:Label ID="Label1" runat="server" Text="Ime:"></asp:Label><br />
-            <asp:TextBox ID="txtIme" runat="server"></asp:TextBox><br />
-            <asp:Button ID="btnObradi" runat="server" Text="Button" OnClick="btnObradi_Click"/><br />
+            <asp:TextBox ID="txtIme" runat="server" ForeColor="Red"></asp:TextBox><br />
+            <asp:Button ID="btnObradi" runat="server" Text="Button" BackColor="Black" ForeColor="White" Height="45px" OnClick="btnObradi_Click" Width="129px"/><br />
             <asp:Label ID="lblRezultat" runat="server" Text=""></asp:Label>
         </div>
     </form>
