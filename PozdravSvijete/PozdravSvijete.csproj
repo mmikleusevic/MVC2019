@@ -141,6 +141,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GenIzlazController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PozdravSvijeteController.cs" />
     <Compile Include="Controllers\PrviController.cs" />
@@ -188,6 +189,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\PozdravSvijete\Index.cshtml" />
     <Content Include="Views\Prvi\DrugaMetodaSParametrima.cshtml" />
+    <Content Include="Views\GenIzlaz\ListaArtikala.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
