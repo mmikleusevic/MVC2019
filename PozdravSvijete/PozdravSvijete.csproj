@@ -143,6 +143,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\GenIzlazController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PopisKosariceController.cs" />
     <Compile Include="Controllers\PozdravSvijeteController.cs" />
     <Compile Include="Controllers\PrviController.cs" />
     <Compile Include="Global.asax.cs">
@@ -190,6 +191,7 @@
     <Content Include="Views\PozdravSvijete\Index.cshtml" />
     <Content Include="Views\Prvi\DrugaMetodaSParametrima.cshtml" />
     <Content Include="Views\GenIzlaz\ListaArtikala.cshtml" />
+    <Content Include="Views\PopisKosarice\PopisKosarice.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
