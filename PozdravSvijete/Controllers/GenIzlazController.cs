@@ -19,5 +19,17 @@ namespace PozdravSvijete.Controllers
             ViewBag.Lista = lista;
             return View();
         }
+        // GenIzlaz/RedirectNaMetodu/Košarica
+        public ActionResult RedirectNaMetodu(string id)
+        {
+            if (id == "Košarica")
+            {
+                return RedirectToAction("PopisKosarice");
+            }
+            else
+            {
+                return RedirectToAction("ListaArtikala");
+            }
+        }
     }
 }
