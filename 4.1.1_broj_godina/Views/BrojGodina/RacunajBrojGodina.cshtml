@@ -1,0 +1,21 @@
+﻿@model string
+@{
+    Layout=null;
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div>
+        <form method="post">
+            <label>Unesite datum rođenja:</label>
+            <input type="text" name="datum" value="" />
+            <button type="submit">Pošalji</button>
+        </form>
+    </div>
+    <p>
+        <label style="font-weight:bold;">Broj Godina: @Model</label>
+    </p>
+</body>
+</html>
+

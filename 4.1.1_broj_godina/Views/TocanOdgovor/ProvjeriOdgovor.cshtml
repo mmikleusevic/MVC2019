@@ -1,0 +1,30 @@
+﻿@model string
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProvjeriOdgovor</title>
+</head>
+<body>
+    <div> 
+        <form method="post">
+            <label>Glavni grad europske unije?</label><br /><hr />
+            <input type="radio" name="odgovor" value="Berlin" />Berlin<br />
+            <input type="radio" name="odgovor" value="Den Haag" />Den Haag<br />
+            <input type="radio" name="odgovor" value="Pariz" />Pariz<br />
+            <input type="radio" name="odgovor" value="Bruxelles" />Bruxelles<br />
+            <p>
+                <button type="submit">Pošalji odgovor</button>
+            </p>
+        </form>
+    </div>
+    <p>
+        <label style="font-weight:bold;">@Model</label>
+    </p>
+</body>
+</html>
