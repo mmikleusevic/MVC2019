@@ -186,8 +186,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Moj\ViewZaForPetlju.cshtml" />
     <Content Include="Views\Shared\_OsnovniLayout.cshtml" />
-    <Content Include="Views\View.cshtml" />
     <Content Include="Views\Shared\_PosebniLayout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
