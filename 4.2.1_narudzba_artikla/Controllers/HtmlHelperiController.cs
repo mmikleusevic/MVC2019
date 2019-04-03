@@ -30,6 +30,18 @@ namespace _4._2._1_narudzba_artikla.Controllers
             ViewBag.Poruka = "Podaci uneseni";
             return View(osoba);
         }
+        public ViewResult StrongTypeFormHelper()
+        {
+            ViewBag.Mjesta = this.mjesta;
+            return View(new Osoba());
+        }
+        [HttpPost]
+        public ViewResult StrongTypeFormHelper(Osoba osoba)
+        {
+            ViewBag.Mjesta = this.mjesta;
+            ViewBag.Poruka = "Podaci uneseni";
+            return View(osoba);
+        }
     }
 
 }
