@@ -126,13 +126,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ChildActionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HtmlHelperiController.cs" />
     <Compile Include="Controllers\NaruciArtikalController.cs" />
     <Compile Include="Controllers\ParcijalniPogledController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Artikl.cs" />
+    <Compile Include="Models\Osoba.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +177,9 @@
     <Content Include="Views\NaruciArtikal\NaruciArtikal.cshtml" />
     <Content Include="Views\ParcijalniPogled\PrikaziKosaricu.cshtml" />
     <Content Include="Views\Shared\_Artikl.cshtml" />
+    <Content Include="Views\ChildAction\ChildActionView.cshtml" />
+    <Content Include="Views\HtmlHelperi\Index.cshtml" />
+    <Content Include="Views\HtmlHelperi\FormHelper.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
