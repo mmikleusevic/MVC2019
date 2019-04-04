@@ -1,0 +1,21 @@
+﻿@model _6._1._1_zadatak.Models.Artikl
+@{
+    ViewBag.Title = "UnesiArtikl";
+}
+
+<h2>Unesi Artikl</h2>
+@using (Html.BeginForm("DodajArtikl", "ListaArtikala"))
+{
+    <label>Kategorija: </label>
+    @Html.DropDownListFor(x => x.Kategorija, new SelectList((string[])ViewBag.Kategorije), "--Kategorija--")<br />
+    <label>Naziv: </label>
+    @Html.TextBoxFor(x => x.Naziv)<br />
+    <label>Cijena: </label>
+    @Html.TextBoxFor(x => x.Cijena)<br />
+    <label>Količina: </label>
+    @Html.TextBoxFor(x => x.Kolicina)<br />
+    <p>
+        <button type="submit">Dodaj!</button>
+    </p>
+}
+

@@ -1,0 +1,20 @@
+﻿@using _5._5._1_zadatak.Models
+@model List<Artikl>
+@{
+    ViewBag.Title = "ObradiListu";
+}
+
+<h2>ObradiListu</h2>
+
+<div>
+    <table>
+        @foreach (Artikl item in Model)
+        {
+            <li>
+                @Html.Action("OdrediKategoriju", item)
+                @Html.Partial("PrikaziArtikal", item)
+            </li>
+        }
+    </table>
+    
+</div>

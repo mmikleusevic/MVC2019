@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer_5.2.3", "primjer_5.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.3.1_zadatak", "5.3.1_zadatak\5.3.1_zadatak.csproj", "{089758DA-83F7-436B-9A03-75FC2AD04DA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.5.1_zadatak", "5.5.1_zadatak\5.5.1_zadatak.csproj", "{9C8F260D-5E80-47C7-8741-46254B7EA869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.1.1_zadatak", "6.1.1_zadatak\6.1.1_zadatak.csproj", "{8EB4F88A-900D-4FA3-9A37-A847879A9E49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{089758DA-83F7-436B-9A03-75FC2AD04DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{089758DA-83F7-436B-9A03-75FC2AD04DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{089758DA-83F7-436B-9A03-75FC2AD04DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C8F260D-5E80-47C7-8741-46254B7EA869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8F260D-5E80-47C7-8741-46254B7EA869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8F260D-5E80-47C7-8741-46254B7EA869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8F260D-5E80-47C7-8741-46254B7EA869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB4F88A-900D-4FA3-9A37-A847879A9E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB4F88A-900D-4FA3-9A37-A847879A9E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB4F88A-900D-4FA3-9A37-A847879A9E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB4F88A-900D-4FA3-9A37-A847879A9E49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
