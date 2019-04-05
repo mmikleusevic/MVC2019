@@ -1,0 +1,43 @@
+﻿@model Validacija.Models.Racun
+@{
+    ViewBag.Title = "RacunIzdan";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RacunIzdan</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+            margin: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h3>Račun @Html.DisplayFor(x=>x.BrojRacuna) izdan!</h3><br />
+    </div>
+    <h3>Podaci računa:</h3>
+    <hr />
+    <div>
+        @Html.LabelFor(x => x.Datum)
+        @Html.EditorFor(x => x.Datum)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Zaposlenik)
+        @Html.EditorFor(x => x.Zaposlenik)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Kupac)
+        @Html.EditorFor(x => x.Kupac)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Cijena)
+        @Html.EditorFor(x => x.Cijena)
+    </div>
+</body>
+</html>
