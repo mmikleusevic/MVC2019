@@ -59,7 +59,7 @@ namespace Validacija.Controllers
         }
         public ViewResult MetaIzdavanjeRacuna()
         {
-            return View(new Racun() { Datum = DateTime.Now, BrojRacuna = "/" + DateTime.Now.Year.ToString() });
+            return View(new MetaRacun() { Datum = DateTime.Now, BrojRacuna = "/" + DateTime.Now.Year.ToString() });
         }
         [HttpPost]
         public ViewResult MetaIzdavanjeRacuna(MetaRacun metaRacun)
