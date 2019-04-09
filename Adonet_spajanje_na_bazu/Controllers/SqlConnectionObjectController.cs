@@ -17,7 +17,6 @@ namespace Adonet_spajanje_na_bazu.Controllers
         {
             string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=dbAlgebra;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connString);
-
             try
             {
                 conn.Open();
