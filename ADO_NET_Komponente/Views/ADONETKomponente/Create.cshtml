@@ -1,0 +1,38 @@
+﻿@model ADO_NET_Komponente.Models.PolaznikModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@ViewBag.Message
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+<fieldset>
+    <legend>Polaznik</legend>
+    @Html.HiddenFor(model => model.IdPolaznik)
+
+    <div>
+        @Html.LabelFor(model => model.Ime)
+        @Html.EditorFor(model => model.Ime)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Prezime)
+        @Html.EditorFor(model => model.Prezime)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Email)
+        @Html.EditorFor(model => model.Email)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.DatumRodjenja)
+        @Html.EditorFor(model => model.DatumRodjenja)
+    </div>
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+</fieldset>
+}
+<div>
+    @Html.ActionLink("Back to List","List")
+</div>

@@ -42,7 +42,7 @@ namespace Adonet_spajanje_na_bazu.Controllers
                 }
                 reader.Close();
             }
-            return View("Index");
+            return View(lstTecajevi);
         }
     }
 }
