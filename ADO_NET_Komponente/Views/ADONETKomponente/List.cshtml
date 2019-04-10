@@ -18,24 +18,25 @@
             <th>@Html.DisplayNameFor(model => model.DatumRodjenja)</th>
         </tr>
     </thead>
-    @foreach (var item in Model)
-    {
-        <tbody>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
             <tr>
                 <td>
                     @Html.HiddenFor(modelItem => item.IdPolaznik)
                     @Html.DisplayFor(modelItem => item.Ime)
                 </td>
-                <td>@Html.HiddenFor(modelItem => item.Prezime)</td>
-                <td>@Html.HiddenFor(modelItem => item.Email)</td>
-                <td>@Html.HiddenFor(modelItem => item.DatumRodjenja)</td>
+                <td>@Html.DisplayFor(modelItem => item.Prezime)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.DatumRodjenja)</td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { idPolaznik = item.IdPolaznik }) |
                     @Html.ActionLink("Details", "Details", new { idPolaznik = item.IdPolaznik }) |
                     @Html.ActionLink("Delete", "Delete", new { idPolaznik = item.IdPolaznik })
                 </td>
             </tr>
-        </tbody>
-    }
+        }
+    </tbody>
 </table>
 
