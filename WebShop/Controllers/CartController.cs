@@ -19,7 +19,7 @@ namespace WebShop.Controllers
             {
                 lstProizvodi = Session["Cart"] as List<Proizvodi>;
             }
-            return View();
+            return View(lstProizvodi);
         }
         public ActionResult AddToCart(int id)
         {
@@ -31,8 +31,8 @@ namespace WebShop.Controllers
             {
                 return HttpNotFound();
             }
-            var proizvodi = db.Proizvodis.Include(p => p.MjereProizvoda);
-            return RedirectToAction(actionName: "Index", controllerName: "WebShop", routeValues: proizvodi.ToList());
+            var proizvods = db.Proizvodis.Include(p => p.MjereProizvoda);
+            return RedirectToAction(actionName: "Index", controllerName: "WebShop", routeValues: proizvods.ToList());
         }
         public ActionResult RemoveFromCart(int index)
         {
