@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShop", "WebShop\WebShop.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adresar.WcfService", "Adresar.WcfService\Adresar.WcfService.csproj", "{2D99DE22-98F2-4AAC-B275-EFA12D27FD54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zavrsni_Ispit1", "Zavrsni_Ispit1\Zavrsni_Ispit1.csproj", "{27384951-3950-43A2-B2B6-89604AD140F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{2D99DE22-98F2-4AAC-B275-EFA12D27FD54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D99DE22-98F2-4AAC-B275-EFA12D27FD54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D99DE22-98F2-4AAC-B275-EFA12D27FD54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27384951-3950-43A2-B2B6-89604AD140F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27384951-3950-43A2-B2B6-89604AD140F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27384951-3950-43A2-B2B6-89604AD140F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27384951-3950-43A2-B2B6-89604AD140F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

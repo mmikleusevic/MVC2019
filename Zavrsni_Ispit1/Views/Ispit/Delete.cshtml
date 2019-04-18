@@ -1,0 +1,50 @@
+﻿@model Zavrsni_Ispit1.Models.Pokloni
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Jeste li sigurni da želite obrisati?</h3>
+<div>
+    <h4>Poklon</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kupljeno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kupljeno)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" />
+            <div>
+                @Html.ActionLink("Povratak na listu", "listaSvihPoklona")
+            </div>        
+        </div>
+    }
+</div>

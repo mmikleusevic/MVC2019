@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Zavrsni_Ispit1.Models.Pokloni>
+
+@{
+    ViewBag.Title = "listaSvihPoklona";
+}
+
+<h2>listaSvihPoklona</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.naziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.opis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.kupljeno)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.naziv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.opis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kupljeno)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    @Html.ActionLink("Dodaj poklon", "DodajPoklon")
+</div>
+<div>
+    @Html.ActionLink("Lista dostupnih poklona", "Popis")
+</div>
